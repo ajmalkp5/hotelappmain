@@ -1,0 +1,34 @@
+# from foodapp.models import Hotelapp
+
+# # creating qry for mysql
+
+# Hotelapp.objects.create(hotel="al reem",foodname="kuzhi mandhi",quantity=2,special="alfahm",maxtime=30,delivery="available",price=500)
+# Hotelapp.objects.create(hotel="kfc",foodname="broasted",quantity=8,special="fried chicken",maxtime=45,delivery="available",price=890)
+# Hotelapp.objects.create(hotel="al shabab",foodname="freid rice",quantity=2,special="alfahm",maxtime=30,delivery="available",price=300)
+# Hotelapp.objects.create(hotel="mouzy",foodname="avil milk",quantity=3,special="sandwitch",maxtime=20,delivery="not available",price=200)
+# Hotelapp.objects.create(hotel="al taza",foodname="shawarma",quantity=4,special="mexican shawarma",maxtime=40,delivery="not available",price=500)
+# Hotelapp.objects.create(hotel="t spot",foodname="chaya",quantity=2,special="horlicks,boost",maxtime=20,delivery="not available",price=80)
+
+
+# qs=Hotelapp.objects.all()
+
+# qs=Hotelapp.objects.get(id=5)
+
+
+# qs=Hotelapp.objects.filter(delivery="available") 
+
+# Hotelapp.objects.filter(id=3).update(hotel="rahmath",foodname="biriyani",price=180)
+
+
+
+# __lt for <
+# __lte for<=
+# __gt for>
+# __gte for>=
+# qs=Hotelapp.objects.filter(price__lt=400)
+# qs=Hotelapp.objects.filter(price__gt=400) 
+# qs=Hotelapp.objects.exclude(foodname="biriyani")
+# qs=Hotelapp.objects.all().values_list("price",flat=True)
+# qs=Hotelapp.objects.all().values_list("price",flat=True).distinct()
+
+
